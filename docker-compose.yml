@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: job_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: job_market
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  python:
+    build: .
+    container_name: job_python
+    depends_on:
+      - mysql
+    volumes:
+      - .:/app
+    environment:
+      DB_HOST: mysql
+      DB_USER: user
+      DB_PASSWORD: pass123
+      DB_NAME: job_market
+
+volumes:
+  mysql_data:
