@@ -1,0 +1,18 @@
+Scope of Work (SOW) & Milestones:
+
+- Milestone#0: Repo + Dockerfile + MySQK (Tasks)    |   Empty DB schema, README (Deliverables) ✅
+
+- Milestone#1: Load Kaggle CSV, handle missing values, normalize columns, dedupe (Tasks)    |   Clean CSV & initial DB load (Deliverables) ✅
+
+- Milestone#2: Transform dataset into normalized tables (jobs, companies, locations, skills) (Tasks)    |   Populated MySQL tables (Deliverables)
+
+- Milestone#3: Skill extraction, normalize synonyms, salary parsing, seniority detection, job category (Tasks)  |   Enriched dataset & NLP module (Deliverables)
+
+- Milestone#4: SQL analysis: skill trends, salary distribution, city-wise demand, role popularity, topic modeling (Tasks)   |   SQL views, Jupyter notebook with EDA (Deliverables)
+
+- Milestone#5: Build Tableau / Power BI dashboard (Tasks)   |   generate PDF report	Interactive dashboard + report (Deliverables)
+
+- Milestone#6: Unit tests, documentation, README, resume bullets, demo slides (Tasks)   |   Final repo, polished deliverables (Deliverables)
+
+
+Total Estimated Duration: ~18–23 days

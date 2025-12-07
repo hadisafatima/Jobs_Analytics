@@ -30,4 +30,18 @@
 
 - Parsing the salary range values into pure integers, creating 2 new columns, salary_min & salary_max, and removing $ and K symbols from the salary range!
 
-- 
+- converting skills from strings to lists for following reasons:
+    - lists can be used to count skills
+    - measure skill demand
+    - generate recommendations
+    - analyze most-needed skills per job role
+    - run NLP models
+    - useful for creating skill analytics table
+    - Running NLP would be easier, it will help to remove duplicates, detect important skills in job descriptions, cluster similar skills
+    - helpful for advances ML Tasks such as, Job matching, Recommendation engine, Skill gap detection, Similarity search ("find similar jobs")
+    - Dashboarding specific to skills becomes easier
+
+- Removing HTML tags symbols, coverting text to lowercase after stripping them (for multiple columns, such as: job_description, benefits, responsibilities). Because, these columns usually contain bullet points, new lines and long paragraphs.
+
+- Renamed the changed/cleaned cols with the names of original cols and removed the uncleaned cols.
+- saved the cleaned dataset into a separate .csv file.
