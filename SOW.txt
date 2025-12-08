@@ -16,3 +16,7 @@ Scope of Work (SOW) & Milestones:
 
 
 Total Estimated Duration: ~18–23 days
+
+
+
+- incomplete!!!! table creations (need to continue from job_contact)

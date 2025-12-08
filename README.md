@@ -45,3 +45,9 @@
 
 - Renamed the changed/cleaned cols with the names of original cols and removed the uncleaned cols.
 - saved the cleaned dataset into a separate .csv file.
+
+
+# Data Population in DB
+- Populated the cleaned and final version of data in DB.
+
+- Creating 4 new tables from the initial DB load and from a separate csv file (job_contacts, because was facing a timeout issue when creating that).
