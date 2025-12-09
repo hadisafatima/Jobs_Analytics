@@ -19,4 +19,10 @@ Total Estimated Duration: ~18–23 days
 
 
 
-- incomplete!!!! table creations (need to continue from job_contact)
+- Tables:
+    - companies
+    - jobs_info
+    - job_contact
+    - skills
+    - job_skill_map
+    - job_details

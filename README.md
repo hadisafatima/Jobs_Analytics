@@ -50,4 +50,6 @@
 # Data Population in DB
 - Populated the cleaned and final version of data in DB.
 
-- Creating 4 new tables from the initial DB load and from a separate csv file (job_contacts, because was facing a timeout issue when creating that).
+- Creating 2 new tables from the initial DB load.
+- A table from a separate csv file (job_contacts, because was facing a timeout issue when creating that).
+- Three tables from a different csv file for creating skills and jobs related tables, i.e: skills, job_details,
