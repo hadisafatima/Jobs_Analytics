@@ -43,6 +43,8 @@
 
 - Removing HTML tags symbols, coverting text to lowercase after stripping them (for multiple columns, such as: job_description, benefits, responsibilities). Because, these columns usually contain bullet points, new lines and long paragraphs.
 
+- cleaned the contact (contact number provided!). Ensured that it must only have the digits!
+
 - Renamed the changed/cleaned cols with the names of original cols and removed the uncleaned cols.
 - saved the cleaned dataset into a separate .csv file.
 
