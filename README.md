@@ -1,3 +1,5 @@
+Project started date: 06-Dec-2025
+
 # Data Cleaning:
 - Understanding the dataset
 
@@ -47,11 +49,35 @@
 
 - Renamed the changed/cleaned cols with the names of original cols and removed the uncleaned cols.
 - saved the cleaned dataset into a separate .csv file.
+- renamed company col to company_name col
 
 
 # Data Population in DB
-- Populated the cleaned and final version of data in DB.
+<!-- - Populated the cleaned and final version of data in DB. -->
 
-- Creating 2 new tables from the initial DB load.
-- A table from a separate csv file (job_contacts, because was facing a timeout issue when creating that).
-- Three tables from a different csv file for creating skills and jobs related tables, i.e: skills, job_details,
+- Created 4 separate csv files with data dedicated to 4 different tables.
+- Created tables using SQL in MySQL Workbench
+- cleaned and normalized the 4 csv files! (why divided the dataset into 4 csv files? because it has 4 different entities)
+
+- concatenated the comapanies file into the cleaned file
+
+- Used Spreadsheets to clean these files (with major concern of handling missing values) !
+    - Jobs.csv
+        - corrected the format of job_id from scientific notation to integer
+        - corrected the job_posting_date's format from mm/dd/yyy to dd-mm-yyy
+        - ensure that contact col only has numbers
+        - check for null values in all the cols
+        - saved changes in a separate csv file
+    
+    - companies.csv
+        - checking for empty cells for all the cols
+        - handles empty cells of zip column
+        - dropped the rows having no values except company_name and zip (with value 0)
+
+    - locations.csv
+        - already cleaned
+
+    - skills.csv
+        - already cleaned
+
+    Populated DB tables with cleaned data files

@@ -20,6 +20,6 @@ Total Estimated Duration: ~18–23 days
 
 
 
-# Working on currently!
-- Need to work on removning single and double quotes from the jobs.csv file
-- create skills table
+# need to remove the jobs with company data!
+
+# divide the data into separate files and hten populate in DB!
